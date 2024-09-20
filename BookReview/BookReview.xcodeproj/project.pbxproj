@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		217D638F2C9DC44300DA6B5C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 217D638E2C9DC44300DA6B5C /* Alamofire */; };
+		217D63922C9DC44B00DA6B5C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 217D63912C9DC44B00DA6B5C /* SnapKit */; };
 		21EDAD872C85C3420090FF67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EDAD862C85C3420090FF67 /* AppDelegate.swift */; };
 		21EDAD892C85C3420090FF67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EDAD882C85C3420090FF67 /* SceneDelegate.swift */; };
 		21EDAD8B2C85C3420090FF67 /* BookReviewListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EDAD8A2C85C3420090FF67 /* BookReviewListViewController.swift */; };
@@ -15,8 +17,6 @@
 		21EDAD9E2C85C3430090FF67 /* ReviewListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EDAD9D2C85C3430090FF67 /* ReviewListPresenterTests.swift */; };
 		21EDADA82C85C3430090FF67 /* BookReviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EDADA72C85C3430090FF67 /* BookReviewUITests.swift */; };
 		21EDADAA2C85C3430090FF67 /* BookReviewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EDADA92C85C3430090FF67 /* BookReviewUITestsLaunchTests.swift */; };
-		21EDADB82C85C3DB0090FF67 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 21EDADB72C85C3DB0090FF67 /* SnapKit */; };
-		21EDADBB2C85C4040090FF67 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 21EDADBA2C85C4040090FF67 /* Alamofire */; };
 		21EDADBE2C85C40E0090FF67 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 21EDADBD2C85C40E0090FF67 /* Kingfisher */; };
 		21EDADC02C85CA3E0090FF67 /* BookReviewListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EDADBF2C85CA3E0090FF67 /* BookReviewListPresenter.swift */; };
 		21EDADC42C8628DD0090FF67 /* BookReviewWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EDADC32C8628DD0090FF67 /* BookReviewWriteViewController.swift */; };
@@ -77,9 +77,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217D63922C9DC44B00DA6B5C /* SnapKit in Frameworks */,
 				21EDADBE2C85C40E0090FF67 /* Kingfisher in Frameworks */,
-				21EDADB82C85C3DB0090FF67 /* SnapKit in Frameworks */,
-				21EDADBB2C85C4040090FF67 /* Alamofire in Frameworks */,
+				217D638F2C9DC44300DA6B5C /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,9 +225,9 @@
 			);
 			name = BookReview;
 			packageProductDependencies = (
-				21EDADB72C85C3DB0090FF67 /* SnapKit */,
-				21EDADBA2C85C4040090FF67 /* Alamofire */,
 				21EDADBD2C85C40E0090FF67 /* Kingfisher */,
+				217D638E2C9DC44300DA6B5C /* Alamofire */,
+				217D63912C9DC44B00DA6B5C /* SnapKit */,
 			);
 			productName = BookReview;
 			productReference = 21EDAD832C85C3420090FF67 /* BookReview.app */;
@@ -277,7 +277,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					21EDAD822C85C3420090FF67 = {
 						CreatedOnToolsVersion = 15.4;
@@ -302,9 +302,9 @@
 			);
 			mainGroup = 21EDAD7A2C85C3420090FF67;
 			packageReferences = (
-				21EDADB62C85C3DB0090FF67 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				21EDADB92C85C4040090FF67 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				21EDADBC2C85C40E0090FF67 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				217D638D2C9DC44300DA6B5C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				217D63902C9DC44B00DA6B5C /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 21EDAD842C85C3420090FF67 /* Products */;
 			projectDirPath = "";
@@ -584,7 +584,6 @@
 		21EDADB12C85C3430090FF67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -604,7 +603,6 @@
 		21EDADB22C85C3430090FF67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -624,7 +622,6 @@
 		21EDADB42C85C3430090FF67 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MVRMRHCZ4J;
@@ -642,7 +639,6 @@
 		21EDADB52C85C3430090FF67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MVRMRHCZ4J;
@@ -699,20 +695,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		21EDADB62C85C3DB0090FF67 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
-			};
-		};
-		21EDADB92C85C4040090FF67 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		217D638D2C9DC44300DA6B5C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 5.9.1;
+			};
+		};
+		217D63902C9DC44B00DA6B5C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
 			};
 		};
 		21EDADBC2C85C40E0090FF67 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
@@ -726,15 +722,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		21EDADB72C85C3DB0090FF67 /* SnapKit */ = {
+		217D638E2C9DC44300DA6B5C /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 21EDADB62C85C3DB0090FF67 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		21EDADBA2C85C4040090FF67 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 21EDADB92C85C4040090FF67 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 217D638D2C9DC44300DA6B5C /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		217D63912C9DC44B00DA6B5C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 217D63902C9DC44B00DA6B5C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 		21EDADBD2C85C40E0090FF67 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
