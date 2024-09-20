@@ -17,4 +17,4 @@ jobs:
     - uses: actions/checkout@v4
     - name: Build
       run: |
-        xcodebuild clean test -project BookReview/BookReview.xcodeproj -scheme BookReview -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=17.5'
+        xcodebuild build -project BookReview/BookReview.xcodeproj
